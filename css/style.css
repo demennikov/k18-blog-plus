@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+}
+
+nav {
+	width: 100%;
+	color: #333333;
+	background-color: #cfe5ef;
+	height: 150px;
+	display: inline-block;
+}
+
+.nav {	
+	position: relative;
+	top:36.5px;
+	border: 1px solid;
+	box-sizing: border-box;
+	vertical-align: middle;
+	padding: 0 20px;
+	width: 100%;
+	max-width: 1292px;
+	min-width: 1292px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+}
+
+
+.logo_text {
+	position: relative;
+	line-height: 62px;
+	font-style: italic;
+	font-weight: 900;
+	vertical-align: middle;
+	font-size: 48px;
+	text-decoration: none;
+	color: #333333;
+}
+
+span.logo_icon{
+	position: relative;
+	top:14px;
+	display: inline-block;
+	height: 62px;
+	width: 50px;
+	background: url(../img/logo-sprite.png);
+}
+
+.logo_icon:active{
+	background-position: -50px;
+}
+
+.logo_text:hover{
+	color: #52359d;
+}
+
+.logo_text:active{
+	color: #333333;
+}
+
+.logo_text:active .logo_icon{
+	background-position: -50px;
+}
+
+
+ul {
+	display: inline-block;
+	margin: 0;
+	padding: 10px 25px 10px 20px;	
+	list-style: none; 
+}
+
+.top-menu li {
+	text-transform: uppercase;
+}
+
+.bottom-menu li {
+	text-transform: none;
+}
+
+.top-menu a:hover {
+	text-decoration: underline;
+	color: #52359d;
+}
+
+.top-menu a:active {
+	text-decoration: underline;
+	color: #333;
+}
+
+.top-menu > li{
+	font-weight: bold;
+	padding: 10px 20px;
+	position: relative;
+	display: inline-block;
+}
+
+.bottom-menu {
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left:0%;
+	width: 100%;
+	box-shadow: 0 0 50px 0 black;
+	display: none;
+}
+
+li#drop{
+	position: relative;
+	z-index: 10;
+}
+
+li#drop:hover {
+	background-color: #fff;
+	color: #333;
+	text-decoration: none;
+}
+
+a#drop:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.bottom-menu > li{
+	font-weight: normal;
+}
+
+.top-menu li:hover ul.bottom-menu {
+	display: block;
+	background-color: #fff;
+}
+
+.bottom-menu a:hover {
+	text-decoration: none;
+	color: #333;
+
+}
+
+
+.login {
+	position: absolute;
+	right: 20px;
+	top: 7px;
+	user-select: none;
+	display: inline-block;
+	width: 125px;
+	height: 60px;
+	background-color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 60px;
+	box-sizing: border-box;
+}
+
+.login:hover {
+	background-color: #52359d;
+	color: #fff;
+}
+
+.login:active {
+	background-color: #333;
+	color: #999;
+}
