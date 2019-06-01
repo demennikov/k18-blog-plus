@@ -76,6 +76,11 @@ ul {
 	list-style: none; 
 }
 
+.top-menu {
+	font-size: 20px;
+	font-weight: bold;
+}
+
 .top-menu li {
 	text-transform: uppercase;
 }
@@ -94,30 +99,33 @@ ul {
 	color: #333;
 }
 
+
+
 .top-menu > li{
-	font-weight: bold;
 	padding: 10px 20px;
 	position: relative;
 	display: inline-block;
 }
 
-.drop {
+li[name="top"]:hover {
+	background-color: #fff;
+	z-index: 500;
 	position: relative;
 	
 }
 
-/*a.drop:hover {
+a.drop:hover {
 	color: #333;
 	text-decoration: none;
-}*/
+}
 
 .bottom-menu {
+	border-radius: 0 5px 5px 5px;
 	position: absolute;
-	z-index: 0;
 	top: 100%;
 	left:0%;
-	width: 100%;
-	box-shadow: 0 0 50px 0 black;
+	width: 187px;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.20);
 	display: none;
 }
 
@@ -126,7 +134,7 @@ ul {
 }
 
 .top-menu li:hover ul.bottom-menu {
-	z-index: 0;
+	z-index: 1;
 	display: block;
 	background-color: #fff;
 }
